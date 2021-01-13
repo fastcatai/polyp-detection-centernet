@@ -7,7 +7,7 @@ RUN pip install Pillow==6.2.0 Keras==2.2.5 keras-resnet==0.2.0 opencv-python-hea
 WORKDIR /app
 COPY server.py detection.py resnet.py utils.py /app/
 # download an unpack archive
-ADD "https://github.com/faivai/polyp-detection-centernet/releases/download/1.0/centernet-resnet101-frozen-e200_b16_lr0.0000._csv_e199_l0.9415_vl1.0991.h5" /app/
+ADD "https://github.com/faivai/polyp-detection-centernet/releases/download/v1.0/centernet-resnet101-frozen-e200_b16_lr0.00001_csv_e199_l0.9415_vl1.0991.h5" /app/
 # starting point
 ENTRYPOINT ["python"]
 CMD ["server.py"]
