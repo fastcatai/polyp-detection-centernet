@@ -20,7 +20,7 @@ class PolypDetection:
         # change local path if run locally
         # model_path = '{path/to/h5}'
         # path to run inside of docker
-        model_path = '/app/centernet-resnet50-finetuned_e200_b16_lr0.0001_csv_e171_l0.6446_vl0.6889.h5'
+        model_path = '/app/centernet-resnet101-frozen-e200_b16_lr0.00001_csv_e199_l0.9415_vl1.0991.h5'
         self.sess = tf.Session()
         self.prediction_model = centernet(num_classes=num_classes,
                                           score_threshold=self.score_threshold,
