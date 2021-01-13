@@ -4,9 +4,13 @@ This repository is used to build a Flask server for polyp detection that runs wi
 
 ## Docker Basic
 
-Build Image: `docker build --tag faiv-detection-server:v1 .`
+Build Image:
 
-Create Container: `docker create --publish <host-port>:1234 --name faiv faiv-detection-server:v1`
+`docker build --tag faiv-detection-server:v1 .`
+
+Create Container:
+
+`docker create --publish <host-port>:1234 --name faiv faiv-detection-server:v1`
 
 ## Return Format
 
