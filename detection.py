@@ -69,9 +69,7 @@ if __name__ == '__main__':
 
     detector = PolypDetection()
     # image path if run locally
-    image = img_to_array(load_img('D:/Users/kevin/Nextcloud/polyp-datasets/ETIS-LaribPolypDB/ETIS-LaribPolypDB-png/17.png'))
-    # image = img_to_array(load_img('D:/Users/kevin/Nextcloud/polyp-datasets/CVC-VideoClinicDB-test/1/1-1.png'))
-    # image = img_to_array(load_img('{path/to/image}'))
+    image = img_to_array(load_img('{path/to/image}'))
     predictions = detector.predict(image)
     json_predictions = []
     labels = ['polyp']
