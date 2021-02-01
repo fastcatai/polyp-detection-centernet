@@ -23,7 +23,7 @@ A pre-built [Docker image](https://hub.docker.com/r/kcrumb/faiv/tags) is availab
 
 If you want to build your own Docker image and create the Docker container from source then these steps must be followed.
 1. Build Image: `docker build --tag faiv-detection-server:centernet https://github.com/faivai/polyp-detection-centernet.git`
-4. Create Container: `docker create --publish 1234:1234 --name faiv-detection faiv-detection-server:v1`
+4. Create Container: `docker create --publish 1234:1234 --name faiv-detection faiv-detection-server:centernet`
 
 ## Return Format
 
